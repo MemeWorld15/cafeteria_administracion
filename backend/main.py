@@ -5,7 +5,6 @@ from pathlib import Path
 import os
 import uvicorn
 
-
 # Crear instancia FastAPI
 app = FastAPI()
 
@@ -18,15 +17,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Ruta ABSOLUTA al directorio (funciona en cualquier entorno)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-assets_path = os.path.join(BASE_DIR, "backend", "assets", "food")  # Ajusta según tu estructura
+# Asegurar que las carpetas existen ANTES de montar
+Path("assets/food").mkdir(parents=True, exist_ok=True)
+Path("assets/Perfiles").mkdir(parents=True, exist_ok=True)
+Path("static").mkdir(parents=True, exist_ok=True)
 
-# Verifica si la carpeta existe (opcional, para debug)
-if not os.path.exists(assets_path):
-    raise RuntimeError(f"No se encontró: {assets_path}")
+# Montar carpetas estáticas
+app.mount("/assets/food", StaticFiles(directory="assets/food"), name="assets-food")
+app.mount("/assets/Perfiles", StaticFiles(directory="assets/Perfiles"), name="assets-perfiles")
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
-app.mount("/assets/food", StaticFiles(directory=assets_path), name="food")
 
 # Incluir routers de la carpeta api
 from api import (
