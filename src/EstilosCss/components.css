@@ -1,0 +1,603 @@
+/* Tablas */
+.tabla-ordenes {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+.tabla-ordenes th,
+.tabla-ordenes td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Estados */
+.estado {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.no-entregado {
+  background: #ffe0b2;
+  color: #c87f00;
+}
+
+.entregado {
+  background: #c8e6c9;
+  color: #2e7d32;
+}
+
+.entregado-msg {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.cancelada {
+  background: #ffcdd2;
+  color: #b71c1c;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Botones */
+.btn-entregar {
+  background-color: #0a9f67;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-entregar:hover {
+  background: #098658;
+}
+
+/* Scroll en tablas */
+.scroll-tabla {
+  overflow-x: auto;
+}
+
+/* Formulario de productos */
+.form-platillo {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+}
+
+.form-platillo input,
+.form-platillo textarea,
+.form-platillo select {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.form-platillo button {
+  background: #0a9f67;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.modal-buttons button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-buttons button:first-child {
+  background: #0a9f67;
+  color: white;
+}
+
+.modal-buttons button:last-child {
+  background: #ccc;
+}
+/*menu*/
+.dropdown-menu {
+  position: absolute;
+  right: 1rem;
+  top: 4rem;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem;
+  border-radius: 5px;
+  z-index: 999;
+  min-width: 150px;
+}
+
+.dropdown-menu p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: #d9534f;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: left;
+}
+
+.logout-btn:hover {
+  background: #f2f2f2;
+}
+
+/* Modales */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-content h3 {
+  margin-bottom: 1rem;
+}
+
+.modal-content button {
+  margin-top: 1rem;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background: #256b29;
+}
+
+.modal-fade-enter-active, .modal-fade-leave-active {
+  transition: opacity 0.3s;
+}
+.modal-fade-enter-from, .modal-fade-leave-to {
+  opacity: 0;
+}
+/*Administrador*/
+
+/*Administrador*/
+/* Topbar */
+.topbar {
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.topbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topbar-logo img {
+  width: 40px;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.role {
+  font-size: 12px;
+  color: #555;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: white;
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.nav ul {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.nav li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav li:hover,
+.nav li.active {
+  background-color: #a7e9af;
+  border-left: 4px solid var(--color-accent);
+}
+
+/* Form cards */
+.form-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+/* Table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.badge-entregado {
+  background-color: #a7e9af;
+  color: #256b29;
+}
+
+.badge-pendiente {
+  background-color: #ffe0b2;
+  color: #d35400;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* === Botones === */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button.danger {
+  background-color: #e74c3c;
+}
+
+button.danger:hover {
+  background-color: #c0392b;
+}
+
+button.secondary {
+  background-color: #3498db;
+}
+
+button.secondary:hover {
+  background-color: #2980b9;
+}
+
+/* === Tablas === */
+.tabla-inventario,
+.tabla-historial {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-inventario th,
+.tabla-inventario td,
+.tabla-historial th,
+.tabla-historial td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.tabla-historial th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+/* === Formularios === */
+.form-inventario input,
+.form-inventario select,
+.modern-input,
+.modern-select,
+.perfil-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* === Perfil === */
+.perfil-imagen,
+.cocina-foto-perfil,
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.perfil-imagen {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #ccc;
+  transition: transform 0.3s;
+}
+
+.cocina-foto-perfil {
+  width: 35px;
+  height: 35px;
+  margin-right: 0.5rem;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* === Alertas, Toast y Mensajes === */
+.alerta-inventario {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.alerta-inventario ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.toast {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.toast.exito {
+  background-color: #4caf50;
+}
+
+.toast.error {
+  background-color: #f44336;
+}
+
+.alerta {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.success {
+  background-color: #e0f9e5;
+  color: #2e7d32;
+}
+
+.error {
+  background-color: #fdecea;
+  color: #c62828;
+}
+
+/* === Badges y Colores === */
+.entrada {
+  color: green;
+  font-weight: bold;
+}
+
+.salida {
+  color: red;
+  font-weight: bold;
+}
+
+.tel-verde {
+  color: #0a9f67;
+  font-weight: bold;
+}
+
+/* === Cards y Contenedores === */
+.usuarios-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+.tabla-card {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.graf-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.graf-item:hover {
+  transform: translateY(-4px);
+}
+
+.graf-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+.trash-icon {
+  color: #e74c3c;
+  cursor: pointer;
+}
+
+/* === Gráficas === */
+canvas {
+  width: 100% !important;
+  height: 300px !important;
+}
+
+.ranking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.ranking-header button {
+  background-color: #2196F3;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.ranking-header button:hover {
+  background-color: #1976D2;
+}
+
+button i {
+  margin: 0 4px;
+  font-size: 1rem;
+}
+
+
+
+/* === Perfil de usuario / Avatar === */
+.perfil-imagen {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}

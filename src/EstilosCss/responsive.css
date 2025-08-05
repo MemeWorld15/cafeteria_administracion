@@ -1,0 +1,119 @@
+/* ========= Estilos Responsivos Globales ========= */
+
+/* Móviles pequeños: teléfonos ≤ 600px */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .topbar,
+  .admin-topbar,
+  .cocina-topbar,
+  .menu-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+  }
+
+  .top-right,
+  .cocina-user {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+
+  .dropdown-menu {
+    position: static !important;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .sidebar,
+  .admin-sidebar,
+  .cocina-sidebar,
+  .menu-sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  .admin-sidebar ul,
+  .cocina-sidebar ul,
+  .menu-sidebar ul {
+    flex-direction: row;
+  }
+
+  .admin-sidebar li,
+  .cocina-sidebar li,
+  .menu-sidebar li {
+    flex: 0 0 auto;
+  }
+
+  .admin-content,
+  .cocina-contenido,
+  .menu-content {
+    padding: 1rem;
+  }
+
+  .tabla-ordenes,
+  .tabla-productos,
+  .tabla-inventario {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .tabla-ordenes table,
+  .tabla-productos table,
+  .tabla-inventario table {
+    width: 600px; /* para scroll horizontal */
+  }
+
+  .login-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .login-left {
+    display: none;
+  }
+
+  .login-right {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .form-inventario input,
+  .form-inventario select {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .menu-tabs button {
+    width: 50%;
+    font-size: 14px;
+  }
+
+  .menu-orden,
+  .menu-sidebar {
+    width: 100%;
+    order: 2;
+  }
+
+  .menu-content {
+    order: 1;
+    width: 100%;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-precio button {
+    margin-top: 0.5rem;
+  }
+}

@@ -1,0 +1,283 @@
+.menu-buscar {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.menu-seccion {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  padding: 1rem;
+}
+
+.menu-titulo {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.menu-categoria {
+  margin-bottom: 1.5rem;
+}
+
+.menu-categoria h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: 0.8rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.platillo-imagen {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+}
+
+.platillo-imagen-item {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.platillo-detalle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.platillo-nombre {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.platillo-descripcion {
+  font-size: 0.9rem;
+  color: #666;
+  flex: 1;
+  margin-bottom: 0.5rem;
+}
+
+.platillo-precio {
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}
+
+.platillo-botones {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.platillo-botones button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background-color: #2e7d32;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.platillo-botones button:hover {
+  background-color: #256b29;
+}
+
+.menu-precio button {
+  padding: 0.3rem 0.6rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #2e7d32;
+  color: white;
+  transition: 0.2s;
+}
+
+.menu-precio button:hover {
+  background-color: #256b29;
+}
+
+.menu-resumen p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+}
+
+.menu-resumen button {
+  background: #e53935;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.menu-resumen button:hover {
+  background-color: #c62828;
+}
+
+.menu-total {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.menu-ordenar {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.menu-tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-tabs button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #444;
+  border-bottom: 3px solid transparent;
+}
+
+.menu-tabs button:hover {
+  background-color: #f5f5f5;
+}
+
+.menu-tabs button.active {
+  color: #2e7d32;
+  border-bottom: 3px solid #2e7d32;
+  background-color: #f1fef1;
+}
+
+.ordenes-historial {
+  width: 100%;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow-y: auto;
+  height: calc(100vh - 140px);
+}
+
+.ordenes-historial h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #2e7d32;
+}
+
+.ordenes-lista {
+  list-style: none;
+}
+
+.orden-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.orden-detalle {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.orden-acciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  min-width: 80px;
+}
+
+.orden-acciones .estado {
+  font-size: 0.8rem;
+  padding: 3px 6px;
+  background-color: #ddd;
+  border-radius: 4px;
+  text-align: center;
+  width: auto;
+  white-space: nowrap;
+}
+
+.cancelar-btn {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  width: auto;
+  min-width: 70px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.cancelar-btn:hover {
+  background-color: #b71c1c;
+}
+
+.cancelar-btn.desactivado {
+  background-color: gray;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.menu-item.no-disponible {
+  opacity: 0.5;
+  pointer-events: none;
+  background-color: #eee;
+}
+
+.menu-item.no-disponible strong {
+  color: #999;
+}

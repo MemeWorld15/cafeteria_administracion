@@ -1,0 +1,149 @@
+.cocina-topbar {
+  height: 60px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.cocina-logo {
+  display: flex;
+  align-items: center;
+}
+
+.cocina-logo img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.cocina-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.cocina-user {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  position: relative;
+}
+
+.cocina-user-info {
+  display: inline-block;
+  text-align: right;
+  font-size: 13px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+/*Menu*/
+.menu-topbar {
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.menu-topbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-topbar-logo img {
+  width: 40px;
+}
+
+.menu-brand {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.menu-role {
+  font-size: 12px;
+  color: #555;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #333;
+}
+
+.menu-name {
+  font-weight: 500;
+}
+/*Administrador*/
+/* === topbar.css === */
+
+/* Topbar principal */
+.admin-topbar {
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Logo e información de marca */
+.admin-topbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-topbar-logo img {
+  width: 40px;
+}
+
+.admin-brand {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.admin-role {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Área derecha de la topbar */
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #333;
+}
+
+.admin-name {
+  font-weight: 500;
+}
+
+

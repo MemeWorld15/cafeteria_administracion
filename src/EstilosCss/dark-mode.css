@@ -1,0 +1,444 @@
+/* === dark-mode.css === */
+
+/* Transición suave para modo oscuro */
+body, body * {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+/* Fondo general y texto */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+/* Texto en títulos y etiquetas */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode label,
+body.dark-mode strong,
+body.dark-mode p,
+body.dark-mode .titulo-admin,
+body.dark-mode .seccion-titulo {
+  color: #f1f1f1;
+}
+
+/* Enlaces */
+body.dark-mode a {
+  color: #90ee90;
+}
+body.dark-mode a:hover {
+  color: #b2f2b2;
+}
+
+/* Formularios */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #2c2c2c;
+  color: #f1f1f1;
+  border: 1px solid #555;
+}
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #aaa;
+}
+
+/* Botones */
+body.dark-mode button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+}
+body.dark-mode button:hover {
+  background-color: #43a047;
+}
+
+/* Topbar */
+body.dark-mode .admin-topbar,
+body.dark-mode .menu-topbar,
+body.dark-mode .cocina-topbar {
+  background-color: #1f1f1f;
+  border-bottom: 1px solid #444;
+}
+
+/* Sidebar */
+body.dark-mode .admin-sidebar,
+body.dark-mode .menu-sidebar,
+body.dark-mode .cocina-sidebar {
+  background-color: #242424;
+  border-right: 1px solid #333;
+}
+body.dark-mode .admin-nav ul li,
+body.dark-mode .menu-sidebar li,
+body.dark-mode .cocina-sidebar li {
+  color: #ddd;
+}
+body.dark-mode .admin-nav ul li.active,
+body.dark-mode .menu-sidebar li.active,
+body.dark-mode .cocina-sidebar li.active {
+  background-color: #333;
+  border-left: 4px solid #4caf50;
+  color: #4caf50;
+}
+
+/* Main body */
+body.dark-mode .admin-main-body,
+body.dark-mode .menu-app,
+body.dark-mode .cocina-app,
+body.dark-mode .admin-content,
+body.dark-mode .form-empleado,
+body.dark-mode .admin-menu-form,
+body.dark-mode .editar-producto-form {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+}
+
+/* Menu Tabs */
+body.dark-mode .menu-tabs {
+  background: #1e1e1e;
+  border-bottom: 1px solid #444;
+}
+body.dark-mode .menu-tabs button {
+  background: transparent;
+  color: #f1f1f1;
+  border-bottom: 2px solid transparent;
+}
+body.dark-mode .menu-tabs button.active {
+  color: #90ee90;
+  border-bottom: 2px solid #90ee90;
+}
+body.dark-mode .menu-tabs button:hover {
+  color: #b2f2b2;
+}
+
+/* Menu Content */
+body.dark-mode .menu-content,
+body.dark-mode .menu-seccion {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+}
+body.dark-mode .menu-item {
+  background: #2a2a2a;
+  border: 1px solid #444;
+}
+body.dark-mode .menu-item p,
+body.dark-mode .menu-item strong {
+  color: #f1f1f1;
+}
+
+/* Orden Sidebar */
+body.dark-mode .menu-orden {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+  color: #f1f1f1;
+}
+
+/* Historial de órdenes */
+body.dark-mode .ordenes-historial {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+}
+body.dark-mode .ordenes-historial h3 {
+  color: #e0e0e0;
+}
+body.dark-mode .ordenes-lista {
+  background-color: #2c2c2c;
+}
+body.dark-mode .orden-item {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  border-bottom: 1px solid #444;
+}
+body.dark-mode .orden-item button {
+  background-color: #444;
+  color: #f1f1f1;
+}
+body.dark-mode .orden-item button:hover {
+  background-color: #555;
+}
+body.dark-mode .estado.entregado {
+  background-color: #4caf50;
+  color: #fff;
+}
+body.dark-mode .estado.no-entregado {
+  background-color: #f57c00;
+  color: #fff;
+}
+
+/* Dropdown */
+body.dark-mode .dropdown-menu {
+  background-color: #2c2c2c;
+  border: 1px solid #555;
+  color: #f1f1f1;
+}
+body.dark-mode .logout-btn:hover {
+  background: #444;
+}
+
+/* Modal */
+body.dark-mode .modal-content {
+  background-color: #2a2a2a;
+  border: 1px solid #555;
+  color: #f1f1f1;
+}
+
+/* Badges */
+body.dark-mode .badge-entregado {
+  background-color: #4caf50;
+  color: #fff;
+}
+body.dark-mode .badge-pendiente {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+/* Gráficas */
+body.dark-mode .graf-item {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+body.dark-mode .graf-item .graf-title {
+  color: #fff;
+}
+body.dark-mode .graf-item .graf-container {
+  background-color: #333;
+}
+
+/* === Modo oscuro elegante para UsuariosCard === */
+body.dark-mode .usuarios-card {
+  background-color: #2c2c2c;
+  color: #f1f1f1;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .usuarios-card table {
+  background-color: transparent;
+  color: #f1f1f1;
+}
+
+body.dark-mode .usuarios-card th,
+body.dark-mode .usuarios-card td {
+  color: #f1f1f1;
+  border-bottom: 1px solid #444;
+}
+
+body.dark-mode .usuarios-card th {
+  background-color: #333;
+}
+
+body.dark-mode .avatar {
+  border: 2px solid #555;
+}
+
+body.dark-mode .tel-verde {
+  color: #6decb9; /* verde menta claro para dark mode */
+}
+
+body.dark-mode .trash-icon {
+  color: #ef5350; /* rojo claro visible en dark mode */
+}
+
+body.dark-mode .alerta.success {
+  background-color: #2e7d32;
+  color: #d0f8ce;
+}
+
+body.dark-mode .alerta.error {
+  background-color: #c62828;
+  color: #fdecea;
+}
+/* === Dark Mode elegante para HEADER (admin-topbar, menu-topbar, cocina-topbar) === */
+
+body.dark-mode .admin-topbar,
+body.dark-mode .menu-topbar,
+body.dark-mode .cocina-topbar {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  border-bottom: 1px solid #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .admin-topbar .admin-logo,
+body.dark-mode .menu-topbar .menu-topbar-logo,
+body.dark-mode .cocina-topbar .cocina-logo {
+  color: #f1f1f1;
+}
+
+/*cambios de lugar*/
+body.dark-mode .cocina-topbar .cocina-user,
+body.dark-mode .cocina-topbar .cocina-user-info,
+body.dark-mode .top-right,
+body.dark-mode .menu-name {
+  color: #f4eeee;
+}
+
+body.dark-mode .admin-topbar i,
+body.dark-mode .menu-topbar i,
+body.dark-mode .cocina-topbar i {
+  color: #f1f1f1;
+  transition: color 0.3s;
+}
+
+body.dark-mode .admin-topbar i:hover,
+body.dark-mode .menu-topbar i:hover,
+body.dark-mode .cocina-topbar i:hover {
+  color: #90ee90; /* verde claro elegante al pasar mouse */
+}
+
+body.dark-mode .dropdown-menu {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  border: 1px solid #444;
+}
+
+body.dark-mode .dropdown-menu p,
+body.dark-mode .dropdown-menu button {
+  color: #f1f1f1;
+}
+
+body.dark-mode .dropdown-menu button.logout-btn:hover {
+  background-color: #333;
+}
+
+body.dark-mode .menu-topbar img,
+body.dark-mode .cocina-topbar img,
+body.dark-mode .admin-topbar img {
+  filter: brightness(0.9);
+}
+/* === Modo oscuro para tablas en UsuariosCard === */
+
+body.dark-mode .usuarios-card {
+  background-color: #2c2c2c;
+  color: #f1f1f1;
+}
+
+body.dark-mode .usuarios-card table th {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+body.dark-mode .usuarios-card table td {
+  background-color: #2c2c2c;
+  color: #f1f1f1;
+}
+
+body.dark-mode .usuarios-card table tr:nth-child(even) {
+  background-color: #262626;
+}
+
+body.dark-mode .usuarios-card table tr:nth-child(odd) {
+  background-color: #2c2c2c;
+}
+/* === Modo oscuro para tabla de órdenes === */
+body.dark-mode .tabla-ordenes th {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+body.dark-mode .tabla-ordenes td {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+}
+
+body.dark-mode .tabla-ordenes tr:nth-child(even) {
+  background-color: #262626;
+}
+
+body.dark-mode .tabla-ordenes tr:nth-child(odd) {
+  background-color: #2a2a2a;
+}
+/*Efectos*/
+/* === Modo oscuro para tabla de órdenes === */
+body.dark-mode .tabla-ordenes th {
+  background-color: #333;        /* Encabezados gris oscuro */
+  color: #f1f1f1;                /* Texto claro */
+}
+
+body.dark-mode .tabla-ordenes td {
+  background-color: #2a2a2a;     /* Fondo general de celdas */
+  color: #f1f1f1;                /* Texto claro */
+}
+
+body.dark-mode .tabla-ordenes tr:nth-child(even) {
+  background-color: #262626;     /* Filas pares ligeramente más oscuras */
+}
+
+body.dark-mode .tabla-ordenes tr:nth-child(odd) {
+  background-color: #2a2a2a;     /* Filas impares consistentes */
+}
+
+body.dark-mode .tabla-ordenes tr:hover {
+  background-color: #333;        /* Sutil resaltado al pasar el mouse */
+}
+
+/* Badges de estado para consistencia en oscuro */
+body.dark-mode .entregado {
+  background-color: #388e3c;     /* Verde oscuro para entregado */
+  color: #f1f1f1;
+}
+
+body.dark-mode .no-entregado {
+  background-color: #f57c00;     /* Naranja para no entregado */
+  color: #f1f1f1;
+}
+
+body.dark-mode .cancelada {
+  background-color: #d32f2f;     /* Rojo para canceladas */
+  color: #f1f1f1;
+}
+/* === HEADER (admin-topbar, menu-topbar, cocina-topbar) === */
+body.dark-mode .admin-topbar .admin-brand,
+body.dark-mode .menu-topbar .menu-brand,
+body.dark-mode .cocina-topbar .cocina-brand,
+body.dark-mode .menu-topbar .menu-role,
+body.dark-mode .admin-topbar .admin-topbar-logo,
+body.dark-mode .menu-topbar .menu-topbar-logo,
+body.dark-mode .cocina-topbar .cocina-logo {
+  color: #f1f1f1; /* Mantener color blanco por defecto */
+  filter: invert(1) hue-rotate(180deg); /* Invertir los colores y luego ajustar el matiz a rojo */
+}
+
+
+/* === Dark Mode para Caja.vue === */
+body.dark-mode .header-card,
+body.dark-mode .config-card,
+body.dark-mode .arqueo-card,
+body.dark-mode .gastos-card,
+body.dark-mode .summary-card {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+  color: #f1f1f1;
+}
+
+body.dark-mode .header-text h1,
+body.dark-mode .header-text p,
+body.dark-mode .stat-value,
+body.dark-mode .stat-label,
+body.dark-mode .gasto-descripcion,
+body.dark-mode .gasto-timestamp,
+body.dark-mode .gasto-amount,
+body.dark-mode .no-gastos,
+body.dark-mode .summary-label,
+body.dark-mode .summary-value,
+body.dark-mode .arqueo-info {
+  color: #f1f1f1;
+}
+
+body.dark-mode .gasto-item {
+  border-bottom: 1px solid #444;
+}
+
+body.dark-mode .summary-row {
+  background-color: #1f1f1f;
+  border-radius: 6px;
+}
+
+body.dark-mode .caja-container {
+  background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+}

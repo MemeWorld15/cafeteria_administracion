@@ -1,0 +1,198 @@
+.cocina-sidebar {
+  width: 200px;
+  background: #f0f0f0;
+  padding: 1rem;
+}
+
+.cocina-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cocina-sidebar li {
+  padding: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.cocina-sidebar li.active {
+  background: #ddd;
+  font-weight: bold;
+}
+
+.cocina-sidebar li i {
+  margin-right: 8px;
+}
+
+.cocina-sidebar {
+  width: 200px;
+  background: #f0f0f0;
+  padding: 1rem 0.5rem;
+  transition: width 0.3s ease;
+}
+
+.cocina-sidebar.collapsed {
+  width: 60px;
+}
+
+.cocina-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cocina-sidebar li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cocina-sidebar li i {
+  margin-right: 8px;
+  width: 20px;
+  text-align: center;
+}
+
+.cocina-sidebar.collapsed li i {
+  margin: 0 auto;
+}
+
+.cocina-sidebar.collapsed li span {
+  display: none;
+}
+
+/* Botón de colapso */
+.sidebar-toggle {
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
+
+/*menu*/
+.menu-sidebar {
+  width: 15%;
+  min-width: 200px;
+  padding-right: 1rem;
+  overflow-y: auto;
+}
+
+.menu-sidebar h3 {
+  margin-bottom: 1rem;
+  color: #444;
+  font-weight: 600;
+}
+
+.menu-sidebar ul {
+  list-style: none;
+}
+
+.menu-sidebar li {
+  margin-bottom: 0.5rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #666;
+  transition: all 0.3s;
+}
+
+.menu-sidebar li:hover,
+.menu-sidebar li.active {
+  background-color: #a7e9af;
+  border-left: 4px solid #2e7d32;
+  color: #2e7d32;
+  font-weight: 600;
+}
+/*Administrador*/
+/* === sidebar.css === */
+
+/* Sidebar principal */
+.admin-sidebar {
+  width: 220px;
+  background-color: white;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Sidebar colapsado */
+.admin-sidebar.collapsed {
+  width: 60px;
+}
+
+/* Botón de colapso */
+.admin-toggle-btn {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Navegación del sidebar */
+.admin-nav ul {
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+.admin-nav li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.admin-nav li:hover,
+.admin-nav li.active {
+  background-color: #a7e9af;
+  border-left: 4px solid #2e7d32;
+}
+
+/* Ocultar texto en colapsado */
+.admin-sidebar.collapsed .admin-nav span,
+.admin-sidebar.collapsed .admin-settings span {
+  display: none;
+}
+
+/* Sección de configuración en el sidebar */
+.admin-settings {
+  margin-top: auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+.admin-settings:hover {
+  background-color: #a7e9af;
+}
+
+
+
+/* Responsivo para tablet/móvil */
+@media (max-width: 1024px) {
+  .admin-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .admin-sidebar.collapsed {
+    width: 100%;
+  }
+
+  .admin-nav li {
+    justify-content: center;
+  }
+}

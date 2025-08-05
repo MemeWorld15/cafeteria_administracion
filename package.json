@@ -1,0 +1,33 @@
+{
+  "name": "cafe_admin",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "setup-db": "node setup.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "python backend/main.py"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@iconify/vue": "^5.0.0",
+    "axios": "^1.8.4",
+    "chart.js": "^4.4.9",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "html2pdf.js": "^0.10.3",
+    "jspdf": "^3.0.1",
+    "jspdf-autotable": "^5.0.2",
+    "pg": "^8.11.1",
+    "sass": "^1.86.3",
+    "vue": "^3.5.13",
+    "vue-color": "^3.2.0",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.2",
+    "vite": "^6.3.0"
+  }
+}

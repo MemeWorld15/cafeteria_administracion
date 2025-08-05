@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #1a3c34, #2d5748);
+  margin: 0;
+}
+
+.login-container {
+  display: flex;
+  width: 800px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-left {
+  width: 50%;
+  background-color: #165a45;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-logo {
+  width: 250px;
+}
+
+.login-right {
+  width: 50%;
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  color: #222;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.login-button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #333;
+}
+
+.login-registro-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-registro-link {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.login-registro-link:hover {
+  color: #0056b3;
+}
+
+.login-registro-link:active {
+  color: #003d80;
+}
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    width: 90%; /* Que use casi todo el ancho disponible */
+    height: auto;
+  }
+
+  .login-left,
+  .login-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .login-logo {
+    width: 150px; /* Ajusta tamaño del logo en móvil */
+  }
+
+  .login-right {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .login-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .login-input {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+

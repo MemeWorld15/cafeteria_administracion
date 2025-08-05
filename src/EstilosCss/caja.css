@@ -1,0 +1,129 @@
+.header-card,
+.config-card,
+.arqueo-card,
+.gastos-card,
+.summary-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.header-card {
+  grid-column: 1 / -1;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.header-icon {
+  font-size: 2rem;
+}
+
+.header-text h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.header-text p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.header-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.money-input {
+  display: flex;
+  align-items: center;
+}
+
+.currency {
+  margin-right: 0.5rem;
+}
+
+.gastos-list {
+  margin-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.gasto-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.gasto-details {
+  flex: 1;
+}
+
+.gasto-descripcion {
+  font-weight: 500;
+}
+
+.gasto-timestamp {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.gasto-amount {
+  font-weight: 600;
+}
+
+.no-gastos {
+  text-align: center;
+  padding: 1rem;
+  color: #888;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background: #f2f2f2;
+  border-radius: 6px;
+}
+
+.summary-item {
+  text-align: center;
+}
+
+.summary-value {
+  font-weight: bold;
+}
+
+.summary-label {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.arqueo-info {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #444;
+}

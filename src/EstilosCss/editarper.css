@@ -1,0 +1,76 @@
+.editar-perfil-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.perfil-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.perfil-imagen-container {
+  position: relative;
+  cursor: pointer;
+  width: 180px;
+  height: 180px;
+}
+
+.perfil-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  transition: transform 0.3s;
+}
+
+.perfil-imagen-container:hover .perfil-imagen {
+  transform: scale(1.05);
+}
+
+/* La superposición solo se muestra si hay una previsualización */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  border-radius: 0 0 50% 50%;
+  padding: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.perfil-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.perfil-form label {
+  font-weight: 500;
+}
+
+.perfil-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.perfil-form button {
+  background: #2d8cf0;
+  color: white;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.perfil-form button:hover {
+  background: #1c6dc1;
+}

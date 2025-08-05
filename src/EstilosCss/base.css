@@ -1,0 +1,17 @@
+/* === base.css === */
+
+/* Reset universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y altura base */
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white; /* Fondo base claro, o usa #f6f6f6 si prefieres */
+  color: #333; /* Color base de texto */
+}
+

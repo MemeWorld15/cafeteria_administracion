@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+mysql-connector-python
+reportlab
+python-multipart
+psycopg2-binary
+pytz
+passlib

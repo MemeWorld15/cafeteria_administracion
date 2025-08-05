@@ -1,0 +1,160 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: linear-gradient(to right, #1a3c34, #2d5748); /* ⬅️ Aplica el fondo global */
+  font-family: Arial, sans-serif;
+}
+
+/* Página principal */
+.registro-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Contenedor de formulario */
+.registro-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Lado izquierdo con el logo */
+.left-side {
+  flex: 1 1 300px;
+  background-color: #165a45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 220px;
+}
+
+/* Lado derecho con el formulario */
+.right-side {
+  flex: 1 1 300px;
+  padding: 40px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  color: #222;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.register-button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #333;
+}
+
+.login-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+.login-link {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #0056b3;
+}
+
+/* ------------------------ */
+/* ✅ Media queries (Responsive) */
+/* ------------------------ */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+  .registro-container {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    flex: 1 1 100%;
+    padding: 30px;
+  }
+
+  .logo {
+    max-width: 180px;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .right-side {
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .input-field {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .register-button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}

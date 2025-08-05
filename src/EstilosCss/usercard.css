@@ -1,0 +1,61 @@
+.usuarios-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+.usuarios-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.usuarios-card th,
+.usuarios-card td {
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.tel-verde {
+  color: #0a9f67;
+  font-weight: bold;
+}
+
+.trash-icon {
+  color: #e74c3c;
+  cursor: pointer;
+}
+
+/* Mensajes */
+.alerta {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.success {
+  background-color: #e0f9e5;
+  color: #2e7d32;
+}
+
+.error {
+  background-color: #fdecea;
+  color: #c62828;
+}
+.modal-editar {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
