@@ -18,19 +18,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Montar archivos estáticos
-app.mount("/assets/food", StaticFiles(directory="assets/food"), name="assets-food")
-Path("assets/food").mkdir(parents=True, exist_ok=True)
+# Ruta ABSOLUTA al directorio (funciona en cualquier entorno)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+assets_path = os.path.join(BASE_DIR, "backend", "assets", "food")  # Ajusta según tu estructura
 
-app.mount("/assets/Perfiles", StaticFiles(directory="assets/Perfiles"), name="assets-perfiles")
-Path("assets/Perfiles").mkdir(parents=True, exist_ok=True)
+# Verifica si la carpeta existe (opcional, para debug)
+if not os.path.exists(assets_path):
+    raise RuntimeError(f"No se encontró: {assets_path}")
 
-# Crear la carpeta static si no existe
-if not os.path.exists("static"):
-    os.makedirs("static")
-
-# Montar la carpeta static
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/assets/food", StaticFiles(directory=assets_path), name="food")
 
 # Incluir routers de la carpeta api
 from api import (
